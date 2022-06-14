@@ -3,7 +3,6 @@
 	padding: 0 auto;
 }
 
-
 .formelier {
 	width: 60vw;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -39,3 +38,20 @@ h2 {
 	display: flex;
 }
 
+.knopjes {
+	border-radius: 5px;
+	height: 2vw;
+	background-color: blue;
+	color: white;
+	border: none;
+	margin-top: 2vh;
+}
+
+.knopjes1 {
+	border-radius: 5px;
+	height: 2vw;
+	background-color: red;
+	color: white;
+	border: none;
+	margin-top: 2vh;
+}
