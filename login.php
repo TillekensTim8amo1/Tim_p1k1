@@ -8,6 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="css/sty.css">
 </head>
 <body>
-	
+	<!-- login form -->
+	<form action="login-backend.php" method="post">
+     	<h2>LOGIN</h2>
+     	<label>gebruikersnaam</label>
+     	<input type="text" name="uname" placeholder="User Name"><br>
+     	<label>wachtwoord</label>
+     	<input type="password" name="password" placeholder="Password"><br>
+     	<button type="submit">Login</button>
+     </form>
 </body>
 </html>
