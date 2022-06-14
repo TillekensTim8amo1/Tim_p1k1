@@ -18,7 +18,8 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 }
 
 //hier word de tabel uitgezet
-
+if(isset($_POST['subritUit'])){
+    $sql = "DELETE TABLE subrit";}
 ?>
 
 <!DOCTYPE html>
