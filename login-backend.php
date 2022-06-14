@@ -18,7 +18,7 @@ $uname = validate($_POST['uname']);
 //hier word gekeken of het veld van de gebruikesnaam leeg is
 	if (empty($uname)) {
 		//hier word je teruggestuurd naar het login formulier
-		header("Location: login-backend.php?error=User Name is required");
+		header("Location: login.php?error=User Name is required");
 	    exit();
 	    //hier word gekeken of het wachtwoord veld leeg is
 	}else if(empty($pass)){
