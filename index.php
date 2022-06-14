@@ -4,6 +4,8 @@
 
 	//Het bestand om de database mee aan te maken.
 	include "dbcreate.php";
+
+	include "veilig.php";
 ?>
 <!DOCTYPE html>
 <html>
