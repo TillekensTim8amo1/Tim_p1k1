@@ -4,7 +4,7 @@ include "conn.php";
 
 include "dbcreate.php";
 //hier word bekeken of je wel bent ingelogd
-//include "veilig.php";
+include "veilig.php";
 
 //hier word de tabel aangemaakt
 if(isset($_POST['subrit'])){
@@ -18,7 +18,8 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 }
 
 //hier word de tabel uitgezet
-
+if(isset($_POST['subritUit'])){
+    $sql = "DELETE TABLE subrit";}
 ?>
 
 <!DOCTYPE html>
