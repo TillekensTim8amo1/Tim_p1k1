@@ -2,6 +2,10 @@
 //hier word de connectie pagina 
 include "conn.php";
 
+include "dbcreate.php";
+//hier word bekeken of je wel bent ingelogd
+//include "veilig.php";
+
 //hier word de tabel aangemaakt
 if(isset($_POST['subrit'])){
     $sql = "CREATE TABLE subrit (
@@ -30,7 +34,7 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 <h2>Subrit module beheer</h2>
 	<div class="formelier">
 		<!-- Dit is het formelier waar je kan aangen of je een tabel wilt toevoegen of verwijderen -->
-		<form action="subrit.php" method="post">
+		<form action="index.php" method="post">
 		<label>Naam database</label><br>
 			<input type="text" name="databaseName" placeholder="Naam Database" class="klantnaam">
 		

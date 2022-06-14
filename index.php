@@ -5,7 +5,8 @@
 	//Het bestand om de database mee aan te maken.
 	include "dbcreate.php";
 
-	include "veilig.php";
+	//hier word bekeken of je wel bent ingelogd
+	//include "veilig.php";
 ?>
 <!DOCTYPE html>
 <html>
