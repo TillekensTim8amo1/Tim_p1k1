@@ -23,7 +23,7 @@ $uname = validate($_POST['uname']);
 	    //hier word gekeken of het wachtwoord veld leeg is
 	}else if(empty($pass)){
 		//hier word je teruggestuurd naar het login formulier
-        header("Location: login-backend.php?error=Password is required");
+        header("Location: login.php?error=Password is required");
 	    exit();
 	}else{
 		//hier word gekeken of de gebruikesnaam en wachtwoord die je hebt ingevoert overeen komen met de de data in de database
@@ -41,17 +41,17 @@ $uname = validate($_POST['uname']);
 		        exit();
             }else{
             	//als de gegevens niet overeen komen met de database krijg je een foutmelding en word je teruggestuurd
-				header("Location: login-backend.php?error=Incorect User name or password");
+				header("Location: login.php?error=Incorect User name or password");
 		        exit();
 			}
 		}else{
 			//als de gegevens niet overeen komen met de database krijg je een foutmelding en word je teruggestuurd
-			header("Location: login-backend.php?error=Incorect User name or password");
+			header("Location: login.php?error=Incorect User name or password");
 	        exit();
 		}
 	}
 	
 }else{
-	header("Location: login-backend.php");
+	header("Location: login.php");
 	exit();
 }
