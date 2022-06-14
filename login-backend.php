@@ -2,7 +2,7 @@
 //hier word de sessie gestart
 session_start(); 
 //hier word de database connectie toegevoegd aan de login page
-include "db.php";
+include "conn.php";
 
 if (isset($_POST['uname']) && isset($_POST['password'])) {
 
@@ -37,7 +37,7 @@ $uname = validate($_POST['uname']);
             	$_SESSION['user_name'] = $row['user_name'];
             	$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
-            	header("Location: home.php");
+            	header("Location: index.php");
 		        exit();
             }else{
             	//als de gegevens niet overeen komen met de database krijg je een foutmelding en word je teruggestuurd

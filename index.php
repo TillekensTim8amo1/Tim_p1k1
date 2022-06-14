@@ -6,7 +6,7 @@
 	include "dbcreate.php";
 
 	//hier word bekeken of je wel bent ingelogd
-	//include "veilig.php";
+	include "veilig.php";
 ?>
 <!DOCTYPE html>
 <html>

@@ -4,7 +4,7 @@ include "conn.php";
 
 include "dbcreate.php";
 //hier word bekeken of je wel bent ingelogd
-//include "veilig.php";
+include "veilig.php";
 
 //hier word de tabel aangemaakt
 if(isset($_POST['subrit'])){
